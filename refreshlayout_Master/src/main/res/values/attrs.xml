@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="RefreshLayout">
+        <attr name="canHeader" format="boolean" />
+        <attr name="canFooter" format="boolean" />
+        <attr name="overscroll" format="boolean" />
+        <attr name="evaluateable" format="boolean" />
+        <attr name="elastic_overscroll" format="boolean" />
+        <attr name="headerID" format="reference" />
+        <attr name="scrollID" format="reference" />
+        <attr name="footerID" format="reference" />
+
+        <attr name="orentation" format="enum" >
+            <enum name="HORIZONTAL" value="0"/>
+            <enum name="VERTICAL" value="1"/>
+        </attr>
+        <attr name="mMaxHeadertScroll" format="dimension" />
+        <attr name="mMaxFooterScroll" format="dimension" />
+        <attr name="mHeaderRefreshPosition" format="dimension" />
+        <attr name="mFooterRefreshPosition" format="dimension" />
+        <attr name="mHeaderRefreshCompletePosition" format="dimension" />
+        <attr name="mFooterLoadingCompletePosition" format="dimension" />
+        <attr name="mFlingmax" format="dimension" />
+        <attr name="delayCompleteTime" format="integer" />
+        <attr name="pullrate" format="integer" />
+    </declare-styleable>
+</resources>

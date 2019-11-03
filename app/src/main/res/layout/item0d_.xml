@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/pt8"
+    >
+
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="@dimen/pt24"
+        android:layout_height="@dimen/pt24"
+        android:background="@drawable/page"
+        app:layout_constraintBottom_toBottomOf="@+id/tv1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tv1"
+         />
+
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/pt4"
+        android:layout_marginEnd="@dimen/pt8"
+        android:layout_marginTop="@dimen/pt8"
+        android:layout_weight="1"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:text="标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题"
+        android:textColor="#535353"
+        android:textSize="@dimen/pt16"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/view"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginRight="@dimen/pt8" />
+
+    <TextView
+        android:id="@+id/tv2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/pt4"
+        android:layout_marginStart="@dimen/pt8"
+        android:text="2017-06-05"
+        android:textColor="@color/colorTextGray2"
+        android:textSize="12sp"
+        android:textStyle="italic"
+        app:layout_constraintStart_toStartOf="@+id/tv1"
+        app:layout_constraintTop_toBottomOf="@+id/tv1"
+        android:layout_marginLeft="@dimen/pt8" />
+
+    <TextView
+        android:id="@+id/from"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/pt2"
+        android:layout_marginStart="@dimen/pt8"
+        android:text="来源"
+        android:textSize="12sp"
+        android:textColor="@color/colorTextGray2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tv2"
+        app:layout_constraintTop_toTopOf="@+id/tv2"
+        android:layout_marginLeft="@dimen/pt8" />
+</android.support.constraint.ConstraintLayout>

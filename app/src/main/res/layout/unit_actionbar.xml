@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/pt48"
+    android:background="@color/title"
+    android:elevation="2dp"
+   >
+
+    <LinearLayout
+        android:id="@+id/llBack"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:background="?android:attr/selectableItemBackground"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="@dimen/pt36"
+            android:layout_height="@dimen/pt36"
+            android:layout_margin="@dimen/pt6"
+            android:background="@drawable/ic_back" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/pt48"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="标题"
+        android:layout_centerInParent="true"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/unit_screensize" />
+
+    <LinearLayout
+        android:id="@+id/llMenu"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:background="?android:attr/selectableItemBackground"
+        android:gravity="center"
+        android:visibility="gone"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/pt2">
+
+        <ImageView
+            android:layout_width="@dimen/pt36"
+            android:layout_height="@dimen/pt36"
+            android:layout_margin="@dimen/pt6"
+            android:background="@drawable/ic_menu" />
+    </LinearLayout>
+</RelativeLayout>

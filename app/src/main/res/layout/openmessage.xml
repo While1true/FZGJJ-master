@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/etPhone"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:editable="true"
+        android:layout_margin="16dp"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:hint="请输入手机号"
+        android:imeOptions="actionNext"
+        android:inputType="phone"
+        android:maxLength="30"
+        android:singleLine="true"
+        android:text=""
+        android:textColor="#535353"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <EditText
+        android:id="@+id/etCode"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:layout_marginRight="8dp"
+        android:editable="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:hint="请输入验证码"
+        android:imeOptions="actionNext"
+        android:inputType="number"
+        android:maxLength="30"
+        android:paddingLeft="@dimen/fab_margin"
+        android:singleLine="true"
+        android:text=""
+        android:textColor="#535353"
+        app:layout_constraintEnd_toStartOf="@+id/send"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etPhone" />
+
+    <Button
+        android:id="@+id/change"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="24dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/button_back_selector"
+        android:text="立即修改"
+        android:textColor="#fff"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etCode" />
+
+    <Button
+        android:id="@+id/send"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:background="@drawable/button_back_selector"
+        android:text="发送验证码"
+        android:textColor="#fff"
+        app:layout_constraintBottom_toBottomOf="@+id/etCode"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/etCode" />
+</android.support.constraint.ConstraintLayout>

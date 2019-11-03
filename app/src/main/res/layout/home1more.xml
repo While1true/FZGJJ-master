@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/lxl_bg"
+    android:orientation="vertical">
+    <LinearLayout
+        android:id="@+id/ll"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/pt48"
+        android:background="@color/title"
+        android:elevation="@dimen/pt2"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="@dimen/pt36"
+            android:layout_height="@dimen/pt36"
+            android:layout_margin="@dimen/pt6"
+            android:background="@drawable/ic_back" />
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/pt48"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="机构简介"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/unit_screensize" />
+
+        <ImageView
+            android:id="@+id/iv_menu"
+            android:layout_width="@dimen/pt36"
+            android:layout_height="@dimen/pt36"
+            android:layout_margin="@dimen/pt6"
+            android:background="@drawable/ic_menu" />
+    </LinearLayout>
+    <LinearLayout
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/pt8"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/ll1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="@dimen/pt36"
+                android:layout_height="@dimen/pt36"
+                android:layout_margin="@dimen/fab_margin"
+                android:src="@drawable/ic_d6" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="中心简介"
+                android:textSize="13dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="@dimen/pt36"
+                android:layout_height="@dimen/pt36"
+                android:layout_margin="@dimen/fab_margin"
+                android:src="@drawable/ic_d5" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="中心领导"
+                android:textSize="13dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="@dimen/pt36"
+                android:layout_height="@dimen/pt36"
+                android:layout_margin="@dimen/fab_margin"
+                android:src="@drawable/ic_d8" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="机构设置"
+                android:textSize="13dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="@dimen/pt36"
+                android:layout_height="@dimen/pt36"
+                android:layout_margin="@dimen/fab_margin"
+                android:src="@drawable/ic_d4" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="部门职能"
+                android:textSize="13dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="@dimen/pt36"
+                android:layout_height="@dimen/pt36"
+                android:layout_margin="@dimen/fab_margin"
+                android:src="@drawable/ic_a3" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="曝光台"
+                android:textSize="13dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        style="@style/style_v_line2"
+        android:visibility="gone"
+        android:layout_margin="@dimen/fab_margin" />
+
+    <ListView
+        android:id="@+id/lv1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/pt4"
+        android:layout_weight="1"
+        android:divider="#00ffffff" />
+</LinearLayout>

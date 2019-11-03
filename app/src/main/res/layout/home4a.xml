@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ll"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="1"
+    android:background="@color/lxl_bg"
+    android:orientation="vertical">
+
+    <fragment
+        android:id="@+id/frag"
+        android:name="com.lecheng.hello.fzgjj.Activity.Unit.ActionBar"
+        class="com.lecheng.hello.fzgjj.Activity.Unit.ActionBar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/pt48"
+        tools:layout="@layout/unit_actionbar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="@dimen/fab_margin">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/style_bg_white">
+
+            <TextView
+                android:id="@+id/tv1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="@dimen/fab_margin"
+                android:text="推送开关"
+                android:textSize="20dp" />
+
+            <ToggleButton
+                android:id="@+id/tg1"
+                android:layout_width="@dimen/pt72"
+                android:layout_height="@dimen/pt32"
+                android:background="@drawable/style_btn_tg"
+                android:textOff=""
+                android:textOn="" />
+        </LinearLayout>
+
+        <View style="@style/style_v_line1" />
+
+        <TextView
+            android:id="@+id/tv2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/style_bg_white"
+            android:padding="@dimen/fab_margin"
+            android:text="扣款还款前提示"
+            android:textSize="20dp" />
+
+        <View style="@style/style_v_line1" />
+
+        <TextView
+            android:id="@+id/tv3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/style_bg_white"
+            android:padding="@dimen/fab_margin"
+            android:text="逾期催收"
+            android:textSize="20dp" />
+
+        <View style="@style/style_v_line1" />
+
+        <TextView
+            android:id="@+id/tv4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/style_bg_white"
+            android:padding="@dimen/fab_margin"
+            android:text="推送测试"
+            android:visibility="gone"
+            android:textSize="20dp" />
+
+        <View style="@style/style_v_line1" />
+    </LinearLayout>
+
+</LinearLayout>
+

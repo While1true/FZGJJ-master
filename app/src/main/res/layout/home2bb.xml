@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ll"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="1"
+    android:background="@color/lxl_bg"
+    android:orientation="vertical"
+    tools:context=".Activity.H1.NewsFragment">
+
+    <fragment
+        android:id="@+id/frag"
+        android:name="com.lecheng.hello.fzgjj.Activity.Unit.ActionBar"
+        class="com.lecheng.hello.fzgjj.Activity.Unit.ActionBar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/pt48"
+        tools:layout="@layout/unit_actionbar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:padding="@dimen/fab_margin">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/fab_margin"
+            android:gravity="center"
+            android:text="福建省直住房公积金互联网提取\n----受理协议"
+            android:textColor="@color/colorBlack"
+            android:textSize="20sp" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/pt4"
+            android:layout_marginRight="@dimen/pt4">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:lineSpacingExtra="@dimen/pt6"
+                android:text="        甲方和乙方提供经单位签章的《委托提取住房资金申请书》，委托丙方按照《_________市住房公积金提取管理办法》和《关于住房公积金（组合）贷款职工委托银行按月提取住房资金用以偿还贷款的有关规定》，办理提取住房公积金，补充住房公积金或按月住房补贴（以下合称住房资金），并将资金划入甲方代扣账户内用于偿还个人住房公积金（组合）贷款。甲方和乙方在签署本委托书时已仔细核对并确认填写的内容无误，已知悉委托提取住房资金的相关规定，并与丙方达成本协议：
+　　
+1．甲方当月还款（不含提前还款和担保公司代偿还款）后的第一个工作日，由丙方按照《关于住房公积金（组合）贷款职工委托银行按月提取住房资金用以偿还贷款的有关规定》，提取甲方和乙方住房资金帐户的资金并划入甲方代扣帐户
+。 　　
+2．丙方在甲方足额偿还当月贷款本息后，根据甲方当月还款金额进行提取。
+　　
+（1）甲方和乙方住房资金帐户余额大于按月偿还的住房贷款本息，丙方按甲方本月已偿还的住房贷款本息金额提取。
+　　
+（2）甲方和乙方住房资金帐户余额小于按月偿还的住房贷款本息，丙方按甲方和乙方各住房资金帐户保留壹元后的余额提取，不足部分甲方应及时补齐，否则造成代扣还款失败，按逾期处理。
+　
+3．提取住房资金顺序依次为：甲方补充住房公积金或按月住房补贴，乙方补充住房公积金或按月住房补贴、甲方住房公积金、乙方住房公积金。前一顺序帐户内资金提取完以后，再提取下一顺序帐户内的资金。以上各账户划款后至少应保留壹元余额。
+　　
+4．本协议经三方签章后，首次提取时生效，在提取住房资金偿还全部贷款本息后或在甲方和乙方住房资金帐户全部注销后自动终止。甲方和乙方自愿终止本协议书时，应到丙方办理终止手续。
+　
+5．甲方或乙方单位变动、夫妻关系变动、住房资金帐户变动或代扣帐户变动时，甲方和乙方应及时到丙方办理本《委托提取住房资金协议书》终止，并重新申请委托提取住房资金。否则，由此产生的责任由甲方和乙方承担。
+　　　
+6．本协议生效期间甲方按月还款凭证不能作为住房资金还贷提取凭证使用，不能办理柜台提取。
+　
+7．甲方提前偿还的贷款部分或由担保公司代为偿还的贷款部分，甲方和乙方应按照《_________市住房公积金提取管理办法》到柜台办理提取。
+　
+8．甲方和乙方应及时通知单位本协议的签订和终止，保证单位及时到住房公积金缴存网点领取委托提取住房资金凭证。
+　
+9．由于单位缴存住房公积金的时间，金额存在不确定因素，甲方应于每月代扣还款日之前查询代扣卡内的余额，并在代扣卡内存入足够的资金以确保按月足额归还贷款，代扣卡内余额不足造成的贷款逾期责任由甲方承担。
+　
+10．丙方未按本协议约定如期划款时，甲方和乙方有权到丙方投诉，丙方必须认真办理，并在十个工作日内予以答复和解决。由于甲方和乙方提供的身份证、贷款帐号、住房资金帐号、代扣卡号或其他原因造成划款失败，由甲方和乙方承担责任；由于丙方工作失误造成的划款失败，丙方必须在十个工作日内完成帐务调整。丙方在甲方和乙方投诉十个工作日内未能予以答复和解决时，必须承担违约责任。
+　　
+11．甲方和乙方必须用正楷填写相关内容，字迹必须端正清晰；甲方和乙方必须保证提供的相关材料及签章均属真实。否则，由此引起的法律纠纷和一切后果由甲方和乙方承担。
+　
+12．本协议一式三份，甲方、乙方、丙方各一份，具同等法律效力。" />
+        </ScrollView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/pt4"
+        android:orientation="vertical">
+
+        <CheckBox
+            android:id="@+id/cb1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/fab_margin"
+            android:layout_marginLeft="@dimen/pt4"
+            android:text="接受福建省直住房公积金互联网提取—受理协议" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/btnBack"
+                style="@style/style_btn_blue1"
+                android:layout_width="@dimen/pt16"
+                android:layout_height="@dimen/pt36"
+                android:layout_margin="@dimen/pt4"
+                android:layout_weight="1"
+                android:text="上一步" />
+
+            <Button
+                android:id="@+id/btnNext"
+                style="@style/style_btn_blue1"
+                android:layout_width="@dimen/pt16"
+                android:layout_height="@dimen/pt36"
+                android:layout_margin="@dimen/pt4"
+                android:layout_weight="1"
+                android:text="下一步" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
+

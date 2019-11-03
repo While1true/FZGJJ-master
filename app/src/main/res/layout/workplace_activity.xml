@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:id="@+id/ll"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/pt48"
+        android:background="@color/title"
+        android:elevation="@dimen/pt2"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_marginRight="0dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginLeft="0dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="0dp">
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="@dimen/pt36"
+            android:layout_height="@dimen/pt36"
+            android:layout_margin="@dimen/pt6"
+            android:background="@drawable/ic_back" />
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/pt48"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="网点查询"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/pt18" />
+
+        <ImageView
+            android:id="@+id/iv_menu"
+            android:visibility="invisible"
+            android:layout_width="@dimen/pt36"
+            android:layout_height="@dimen/pt36"
+            android:layout_margin="@dimen/pt6"
+            android:background="@drawable/ic_menu" />
+    </LinearLayout>
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="16dp"
+        android:text="福建省直单位住房公积金管理中心"
+        android:textSize="19sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:lineSpacingExtra="8sp"
+        android:textSize="16sp"
+        android:textColor="#666666"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:text="地址：福州市鼓楼区鼓屏路142号\n电话：(0591)12329  \n中心地图："
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="7dp"
+        app:layout_constraintTop_toBottomOf="@+id/textView3"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintHorizontal_bias="0.0" />
+
+    <com.lecheng.hello.fzgjj.Widget.SmartImageView
+        android:id="@+id/imageView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:scaleType="centerCrop"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:src="@drawable/bg_head"
+        app:layout_constraintHorizontal_bias="0.0"
+        android:layout_marginTop="0dp"
+        app:layout_constraintTop_toBottomOf="@+id/ll" />
+
+    <com.lecheng.hello.fzgjj.Widget.SmartImageView
+        android:id="@+id/imageView2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4"
+        android:src="@drawable/mapgjj" />
+</android.support.constraint.ConstraintLayout>

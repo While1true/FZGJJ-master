@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="#f0f0f0"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:id="@+id/ll"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/pt48"
+        android:background="@color/title"
+        android:elevation="@dimen/pt2"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="@dimen/pt36"
+            android:layout_height="@dimen/pt36"
+            android:layout_margin="@dimen/pt6"
+            android:background="@drawable/ic_back" />
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/pt48"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="消息列表"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/unit_screensize" />
+    </LinearLayout>
+    <com.ck.hello.nestrefreshlib.View.RefreshViews.SRecyclerView
+        android:id="@+id/srecyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</LinearLayout>

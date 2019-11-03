@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/md_16dp"
+    android:paddingRight="@dimen/md_16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/pt12"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:layout_width="@dimen/pt12"
+            android:layout_height="@dimen/pt12"
+            android:src="@drawable/ic_navi" />
+
+        <TextView
+            android:id="@+id/tv1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/fab_margin"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:lines="1"
+            android:text="测试文字"
+            android:textColor="@color/colorBlack2"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/pt20"
+        android:layout_marginTop="@dimen/pt6"
+        android:text="测试文字2" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/pt20"
+            android:layout_marginTop="@dimen/pt6"
+            android:layout_weight="1"
+            android:text="2017-06-07"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/pt4"
+            android:layout_marginLeft="@dimen/pt20"
+            android:layout_marginTop="@dimen/pt4"
+            android:gravity="right"
+            android:text="测试文字3"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+
+    <View
+        style="@style/style_v_line2"
+        android:layout_marginTop="@dimen/fab_margin" />
+</LinearLayout>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ll"
+    android:background="@color/lxl_bg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="1"
+    android:orientation="vertical">
+
+    <fragment
+        android:id="@+id/frag"
+        android:name="com.lecheng.hello.fzgjj.Activity.Unit.ActionBar"
+        class="com.lecheng.hello.fzgjj.Activity.Unit.ActionBar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/pt48"
+        tools:layout="@layout/unit_actionbar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <coms.kxjsj.refreshlayout_master.RefreshLayout
+            android:id="@+id/lv1"
+            android:divider="#00000000"
+            app:elastic_overscroll="true"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+        <LinearLayout
+            android:id="@+id/footer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/fab_margin">
+
+            <EditText
+                android:id="@+id/et1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="请输入..." />
+
+            <Button
+                android:id="@+id/btnSend"
+                style="@style/style_btn_blue1"
+                android:layout_width="@dimen/md_72dp"
+                android:layout_height="@dimen/unit_btnheight"
+                android:layout_marginLeft="@dimen/pt4"
+                android:text="发送" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>
+

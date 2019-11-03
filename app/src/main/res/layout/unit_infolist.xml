@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.lecheng.hello.fzgjj.Activity.Unit.InfoList">
+
+    <fragment
+        android:id="@+id/frag"
+        android:name="com.lecheng.hello.fzgjj.Activity.Unit.ActionBar"
+        class="com.lecheng.hello.fzgjj.Activity.Unit.ActionBar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/pt48"
+        tools:layout="@layout/unit_actionbar" />
+
+    <coms.kxjsj.refreshlayout_master.RefreshLayout
+        android:id="@+id/refreshLayout"
+        android:paddingLeft="@dimen/pt8"
+        android:paddingRight="@dimen/pt8"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:canFooter="true" />
+    <!--<com.handmark.pulltorefresh.library.PullToRefreshListView-->
+    <!--android:id="@+id/lv1"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_margin="@dimen/pt4"-->
+    <!--android:layout_weight="1"-->
+    <!--android:divider="#00ffffff"-->
+    <!--android:visibility="gone" />-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/tvLoad"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_weight="1"-->
+    <!--android:gravity="center"-->
+    <!--android:text="正在获取信息..." />-->
+</LinearLayout>

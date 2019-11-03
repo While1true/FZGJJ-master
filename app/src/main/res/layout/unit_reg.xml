@@ -1,0 +1,96 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:elevation="4dp"
+    android:layout_gravity="bottom|center"
+    android:background="@drawable/bg2"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/fab_margin"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="福建住房"
+                    android:textColor="@color/colorBlue1"
+                    android:textSize="28dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="公积金"
+                    android:textSize="28dp" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="32dp"
+                android:layout_marginRight="72dp"
+                android:gravity="right"
+                android:text="个人用户注册"
+                android:textSize="13dp" />
+
+            <EditText
+                android:id="@+id/etAccount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/fab_margin"
+                android:hint="请输入账号"
+                android:paddingLeft="@dimen/fab_margin"
+                android:singleLine="true" />
+
+            <EditText
+                android:id="@+id/etPwd1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/fab_margin"
+                android:hint="请输入密码"
+                android:paddingLeft="@dimen/fab_margin"
+                android:singleLine="true" />
+
+            <EditText
+                android:id="@+id/etPwd2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/fab_margin"
+                android:hint="请再次输入密码"
+                android:paddingLeft="@dimen/fab_margin"
+                android:singleLine="true" />
+
+
+            <!--android:clickable="true"-->
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/pt56"
+                android:layout_marginLeft="@dimen/pt64"
+                android:layout_marginRight="@dimen/pt64"
+                android:layout_marginTop="@dimen/pt24"
+                app:cardCornerRadius="16dp"
+                app:cardElevation="2dp">
+
+                <Button
+                    android:id="@+id/btnLogin"
+                    style="@style/style_btn_blue1"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/unit_btnheight"
+                    android:text="注册" />
+            </android.support.v7.widget.CardView>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

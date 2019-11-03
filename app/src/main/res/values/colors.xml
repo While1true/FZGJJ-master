@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#137ade</color>
+    <color name="colorPrimaryDark">#0257ad</color>
+    <color name="title">#0257ad</color>
+    <!--<color name="title">#323233</color>-->
+    <color name="colorPrimaryPure">#8b006af5</color>
+    <color name="colorAccent">#3ab152</color>
+    <color name="lightblue">#7DBEFC</color>
+
+    <color name="background1">#ffffff</color>
+    <color name="background2">#0a00c4ff</color>
+    <color name="colorTransparent">#00ffffff</color>
+    <color name="colorText1">#c3000000</color>
+    <color name="colorTextGray1">#dadad8</color>
+    <color name="colorTextGray2">#babbb9</color>
+    <color name="colorTextGray3">#5a5b5a</color>
+    <color name="tranBlack">#3f818181</color>
+
+    <color name="colorTran">#00ffffff</color>
+    <color name="colorWhite">#ffffff</color>
+    <color name="colorWhite1">#8bffffff</color>
+    <color name="colorWhite2">#aae9f0eb</color>
+    <color name="colorWhite3">#26e9f0eb</color>
+    <color name="colorWhite4">#f2eded</color>
+    <color name="colorRed2">#8c0002</color>
+    <color name="colorRed1">#f80408</color>
+    <color name="colorOrange1">#ff7300</color>
+    <color name="colorYellow">#ebe00b</color>
+    <color name="colorGreen1">#1eec07</color>
+    <color name="colorGreen2">#3daf37</color>
+    <color name="colorBlue1">#02a8e0</color>
+    <color name="colorBlue2">#137ade</color>
+    <color name="colorBlue3">#4043ff</color>
+    <color name="colorPurple1">#ab03e9</color>
+    <color name="colorBlack">#000000</color>
+    <color name="colormenu">#394144</color>
+    <color name="colorBlack2">#d3000000</color>
+    <color name="colorBlack3">#333333</color>
+    <color name="colorGray">#a4a4a4</color>
+    <color name="BlackCool">#9f000000</color>
+
+    <color name="lxl_bg">#eeeeee</color>
+</resources>

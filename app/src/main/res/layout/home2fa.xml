@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.lecheng.hello.fzgjj.Activity.H2.GJJAccountTQQuery">
+
+    <fragment
+        android:id="@+id/frag"
+        android:name="com.lecheng.hello.fzgjj.Activity.Unit.ActionBar"
+        class="com.lecheng.hello.fzgjj.Activity.Unit.ActionBar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/pt48"
+        tools:layout="@layout/unit_actionbar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_width="@dimen/pt1"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/pt36"
+                    android:padding="@dimen/fab_margin"
+                    android:text="账户" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/pt36"
+                    android:padding="@dimen/fab_margin"
+                    android:text="提取人" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/pt36"
+                    android:padding="@dimen/fab_margin"
+                    android:text="审核人" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/pt36"
+                    android:padding="@dimen/fab_margin"
+                    android:text="实际提取总金额(元)"
+                    android:textSize="13dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/pt36"
+                    android:padding="@dimen/fab_margin"
+                    android:text="实际提取本金(元)" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/pt36"
+                    android:padding="@dimen/fab_margin"
+                    android:text="实际提取利息(元)" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/pt36"
+                    android:padding="@dimen/fab_margin"
+                    android:text="实际提取日期" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/pt36"
+                    android:padding="@dimen/fab_margin"
+                    android:text="提取类型" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/pt36"
+                    android:padding="@dimen/fab_margin"
+                    android:text="提取原因" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/pt36"
+                    android:padding="@dimen/fab_margin"
+                    android:text="提取方式" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/pt36"
+                    android:padding="@dimen/fab_margin"
+                    android:text="账户类型" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/pt36"
+                    android:padding="@dimen/fab_margin"
+                    android:text="账户余额（元）" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="@dimen/pt1"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/pt36"
+                    android:padding="@dimen/fab_margin"
+                    android:text="..." />
+
+                <TextView
+                    android:id="@+id/tv2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/pt36"
+                    android:padding="@dimen/fab_margin"
+                    android:text="..." />
+
+                <TextView
+                    android:id="@+id/tv3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/pt36"
+                    android:padding="@dimen/fab_margin"
+                    android:text="..." />
+
+                <TextView
+                    android:id="@+id/tv4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/pt36"
+                    android:padding="@dimen/fab_margin"
+                    android:text="..." />
+
+                <TextView
+                    android:id="@+id/tv5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/pt36"
+                    android:padding="@dimen/fab_margin"
+                    android:text="..." />
+
+                <TextView
+                    android:id="@+id/tv6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/pt36"
+                    android:padding="@dimen/fab_margin"
+                    android:text="..." />
+
+                <TextView
+                    android:id="@+id/tv7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/pt36"
+                    android:padding="@dimen/fab_margin"
+                    android:text="..." />
+
+                <TextView
+                    android:id="@+id/tv8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/pt36"
+                    android:padding="@dimen/fab_margin"
+                    android:text="..." />
+
+                <TextView
+                    android:id="@+id/tv9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/pt36"
+                    android:padding="@dimen/fab_margin"
+                    android:text="..." />
+
+                <TextView
+                    android:id="@+id/tv10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/pt36"
+                    android:padding="@dimen/fab_margin"
+                    android:text="..." />
+
+                <TextView
+                    android:id="@+id/tv11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/pt36"
+                    android:padding="@dimen/fab_margin"
+                    android:text="..." />
+
+                <TextView
+                    android:id="@+id/tv12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/pt36"
+                    android:padding="@dimen/fab_margin"
+                    android:text="..." />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

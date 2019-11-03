@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ll"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lxl_bg"
+    android:orientation="vertical">
+
+    <fragment
+        android:id="@+id/frag"
+        android:name="com.lecheng.hello.fzgjj.Activity.Unit.ActionBar"
+        class="com.lecheng.hello.fzgjj.Activity.Unit.ActionBar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/pt48"
+        tools:layout="@layout/unit_actionbar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/pt4"
+        android:gravity="center">
+
+        <EditText
+            android:id="@+id/etSearch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/style_et_shape"
+            android:hint="请输入搜索的标题"
+            android:text=""
+            android:textColorHint="@color/colorGray" />
+
+        <Button
+            android:id="@+id/btnSearch"
+            style="@style/style_btn_blue1"
+            android:layout_width="@dimen/pt72"
+            android:layout_height="@dimen/unit_btnheight"
+            android:layout_marginLeft="@dimen/fab_margin"
+            android:text="查询" />
+    </LinearLayout>
+<coms.kxjsj.refreshlayout_master.RefreshLayout
+    android:paddingLeft="@dimen/pt8"
+    android:paddingRight="@dimen/pt8"
+    android:id="@+id/refreshLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"/>
+</LinearLayout>
+

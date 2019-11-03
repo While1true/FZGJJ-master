@@ -1,0 +1,163 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/title</item>
+        <item name="colorPrimaryDark">@color/title</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="startTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowBackground">@drawable/hello_world</item>
+
+    </style>
+
+    <style name="progress_dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowIsFloating">true</item>
+        <!-- 设置未浮动窗口 -->
+        <item name="android:windowFrame">@null</item>
+        <!-- 设置无边框 -->
+        <item name="android:windowNoTitle">true</item>
+        <!-- 设置无标题 -->
+        <item name="android:windowBackground">@color/colorTextGray2</item>
+        <!-- 设置完全透明 -->
+        <item name="android:backgroundDimEnabled">true</item>
+        <!-- 设置屏幕变暗 -->
+    </style>
+
+    <style name="style_v_line1">
+        <!--横线1，粗0.8，比较黑-->
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0.8dp</item>
+        <item name="android:background">@color/colorTextGray1</item>
+    </style>
+
+    <style name="style_v_line2">
+        <!--横线1，粗0.4，比较浅-->
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0.4dp</item>
+        <item name="android:background">@color/colorTextGray2</item>
+    </style>
+
+    <style name="style_v_line3">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0.1dp</item>
+        <item name="android:background">@color/colorTextGray1</item>
+    </style>
+
+    <style name="style_btn_blue1">
+        <!--蓝色按钮样式-->
+        <item name="android:background">@drawable/style_btn_blue</item>
+        <item name="android:paddingRight">@dimen/fab_margin</item>
+        <item name="android:paddingLeft">@dimen/fab_margin</item>
+        <!--<item name="android:layout_weight">1</item>-->
+        <item name="android:textColor">@color/colorWhite</item>
+    </style>
+
+    <style name="style_btn_green1">
+        <!--绿色按钮样式-->
+        <item name="android:background">@drawable/style_btn_green</item>
+        <item name="android:paddingRight">@dimen/fab_margin</item>
+        <item name="android:paddingLeft">@dimen/fab_margin</item>
+        <!--<item name="android:layout_weight">1</item>-->
+        <item name="android:textColor">@color/colorWhite1</item>
+    </style>
+
+    <style name="style_btn_red1">
+        <!--红色按钮样式-->
+        <item name="android:background">@drawable/style_btn_red</item>
+        <item name="android:paddingRight">@dimen/fab_margin</item>
+        <item name="android:paddingLeft">@dimen/fab_margin</item>
+        <!--<item name="android:layout_weight">1</item>-->
+        <item name="android:textColor">@color/colorWhite</item>
+    </style>
+
+    <style name="style_btn_red2">
+        <!--红色按钮样式-->
+        <item name="android:background">@drawable/style_btn_red2</item>
+        <item name="android:paddingRight">@dimen/fab_margin</item>
+        <item name="android:paddingLeft">@dimen/fab_margin</item>
+        <!--<item name="android:layout_weight">1</item>-->
+        <item name="android:textColor">@color/colorWhite</item>
+    </style>
+
+    <style name="style_ll_vertical">
+        <!--通用卡片式垂直线性布局-->
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_marginTop">@dimen/fab_margin</item>
+        <item name="android:background">@color/colorWhite1</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:elevation" tools:targetApi="lollipop">2dp</item>
+
+    </style>
+
+
+    <style name="style_tv_screen">
+        <!--显示器-->
+        <item name="android:text">Screen</item>
+        <item name="android:textSize">20dp</item>
+    </style>
+
+    <style name="style_tv_loading">
+        <!--加载中展示-->
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/colorTextGray1</item>
+        <item name="android:textSize">14dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">180dp</item>
+        <item name="android:text">正在加载数据中...</item>
+    </style>
+
+    <style name="theme_AlertNoActionBarBy" parent="@style/Theme.AppCompat.Light.NoActionBar">
+        <!--无标题的窗口activity主题-->
+        <item name="windowActionBar">false</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowNoTitle">true</item><!--除去title-->
+        <item name="android:windowContentOverlay">@null</item>
+        <!-- <item name="android:backgroundDimEnabled">false</item> -->
+        <!--  <item name="android:windowBackground">@null</item> --><!--除去背景色-->
+    </style>
+
+    <style name="tabLayoutTextStyle">
+        <item name="android:textSize">@dimen/md_24dp</item>
+    </style>
+
+    <style name="MyTabLayoutTextAppearance" parent="TextAppearance.AppCompat.Widget.ActionBar.Title">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="MyTabLayoutTextAppearanceInverse" parent="TextAppearance.AppCompat.Widget.ActionBar.Title.Inverse">
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">@android:color/holo_red_light</item>
+    </style>
+
+    <style name="tvGrid">
+        <item name="android:background">@color/colorWhite</item>
+        <item name="android:layout_margin">0.5dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:padding">8dp</item>
+        <item name="android:layout_width">match_parent</item>
+    </style>
+
+    <style name="Color0056ac">
+        <item name="android:textColor">#0056ac</item>
+    </style>
+
+    <style name="Color535353">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#0056ac</item>
+    </style>
+    <style name="MyEditText" parent="Theme.AppCompat.Light">
+        <item name="colorControlNormal">@color/colorWhite</item>
+        <item name="colorControlActivated">@color/colorWhite</item>
+    </style>
+    <!--<style name="style_cardview_ic">-->
+    <!--<item name="android:layout_margin">8dp</item>-->
+    <!--<item name="app:cardElevation">2dp</item>-->
+    <!--</style>-->
+</resources>

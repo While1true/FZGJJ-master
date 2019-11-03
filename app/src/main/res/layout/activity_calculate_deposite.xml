@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <android.support.constraint.ConstraintLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff"
+        tools:context="com.lecheng.hello.fzgjj.Activity.H3.CalculateDepositeActivity">
+
+
+        <LinearLayout
+            android:id="@+id/ll"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@color/title"
+            android:elevation="@dimen/pt2"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/iv_back"
+                android:layout_width="@dimen/pt36"
+                android:layout_height="@dimen/pt36"
+                android:layout_margin="@dimen/pt6"
+                android:background="@drawable/ic_back" />
+
+            <TextView
+                android:id="@+id/tvTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/pt48"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="贷款额度计算"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/pt18" />
+
+            <ImageView
+                android:id="@+id/iv_menu"
+                android:layout_width="@dimen/pt36"
+                android:layout_height="@dimen/pt36"
+                android:layout_margin="@dimen/pt6"
+                android:background="@drawable/ic_menu"
+                android:visibility="invisible" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/pt8"
+            android:layout_marginStart="@dimen/pt8"
+            android:layout_marginTop="@dimen/pt18"
+            android:text="现在家庭夫妻名下月负债金额总计(万元）："
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ss" />
+
+        <EditText
+            android:id="@+id/fz_et"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/pt8"
+            android:layout_marginStart="@dimen/pt8"
+            android:layout_marginTop="@dimen/pt5"
+            android:ems="10"
+            android:inputType="number"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView13" />
+
+        <TextView
+            android:id="@+id/textView14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/pt26"
+            android:text="申请次数："
+            app:layout_constraintLeft_toLeftOf="@+id/fz_et"
+            app:layout_constraintTop_toBottomOf="@+id/fz_et" />
+
+        <Spinner
+            android:id="@+id/times_spinner"
+            style="@style/Widget.AppCompat.Spinner.Underlined"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/pt16"
+            android:layout_marginStart="@dimen/pt16"
+            android:entries="@array/gjjtimes"
+            app:layout_constraintBottom_toBottomOf="@+id/textView14"
+            app:layout_constraintLeft_toRightOf="@+id/textView14"
+            app:layout_constraintTop_toTopOf="@+id/textView14" />
+
+        <Button
+            android:id="@+id/js_bt"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/pt8"
+            android:layout_marginLeft="@dimen/pt8"
+            android:layout_marginRight="17dp"
+            android:layout_marginStart="@dimen/pt8"
+            android:text="计算最高贷款额度"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_marginTop="0dp"
+            app:layout_constraintTop_toBottomOf="@+id/tv_introduce" />
+
+
+        <TextView
+            android:id="@+id/tv_result"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/pt8"
+            android:layout_marginLeft="@dimen/pt8"
+            android:layout_marginRight="@dimen/pt8"
+            android:layout_marginStart="@dimen/pt8"
+            android:text=""
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:textColor="#535353"
+            android:layout_marginTop="@dimen/pt16"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@+id/guideline"
+            app:layout_constraintTop_toBottomOf="@+id/textView14" />
+
+        <TextView
+            android:id="@+id/tv_introduce"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:padding="@dimen/pt15"
+            android:visibility="gone"
+            android:text="（本额度仅供参考，未考虑你得实际还款能力）"
+            android:textAppearance="@style/Color0056ac"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_result"
+            app:layout_constraintLeft_toLeftOf="parent" />
+
+        <TextView
+            android:id="@+id/info"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/pt12"
+            android:layout_marginLeft="@dimen/pt12"
+            android:layout_marginRight="@dimen/pt12"
+            android:layout_marginStart="@dimen/pt12"
+            android:layout_marginTop="@dimen/pt18"
+            android:lineSpacingExtra="4dp"
+            android:paddingBottom="15dp"
+            android:textSize="14sp"
+            android:text="注：按照当前最新的公积金贷款政策试算。
+\n月缴存基数：为上一年度7月1日至本年6月30日的月平均工资总额，由单位每年7月份向中心申报确定。
+\n月缴存额：指单位和每月正常缴存的公积金缴存合计金额，等于月缴存基数乘以单位和个人的公积金缴交率之和。"
+            android:textAppearance="@style/Color0056ac"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/js_bt" />
+
+        <include
+            android:id="@+id/ss1"
+            layout="@layout/activity_calculate_deposite3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ll" />
+
+        <include
+            android:id="@+id/ss"
+            layout="@layout/activity_calculate_deposite1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ss1" />
+
+    </android.support.constraint.ConstraintLayout >
+</ScrollView>
+

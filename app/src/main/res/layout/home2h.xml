@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ll"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_weight="1"
+    android:background="@color/lxl_bg"
+    android:orientation="vertical"
+    tools:context=".Activity.H1.NewsFragment">
+
+    <fragment
+        android:id="@+id/frag"
+        android:name="com.lecheng.hello.fzgjj.Activity.Unit.ActionBar"
+        class="com.lecheng.hello.fzgjj.Activity.Unit.ActionBar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/pt48"
+        tools:layout="@layout/unit_actionbar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:paddingBottom="@dimen/pt16">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/colorTextGray2">
+
+            <LinearLayout
+                android:layout_width="@dimen/pt1"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/tvGrid"
+                    android:layout_height="@dimen/pt36"
+                    android:padding="@dimen/fab_margin"
+                    android:text="姓名" />
+
+                <TextView
+                    style="@style/tvGrid"
+                    android:layout_height="@dimen/pt36"
+                    android:padding="@dimen/fab_margin"
+                    android:text="员工账号" />
+
+                <TextView
+                    style="@style/tvGrid"
+                    android:layout_height="@dimen/pt36"
+                    android:padding="@dimen/fab_margin"
+                    android:text="账号状态" />
+
+                <TextView
+                    style="@style/tvGrid"
+                    android:layout_height="@dimen/pt36"
+                    android:padding="@dimen/fab_margin"
+                    android:text="账户类型" />
+
+                <TextView
+                    style="@style/tvGrid"
+                    android:layout_height="@dimen/pt36"
+                    android:padding="@dimen/fab_margin"
+                    android:text="联名卡卡号" />
+
+                <TextView
+                    style="@style/tvGrid"
+                    android:layout_height="@dimen/pt36"
+                    android:padding="@dimen/fab_margin"
+                    android:text="开户日期" />
+
+                <TextView
+                    style="@style/tvGrid"
+                    android:layout_height="@dimen/pt36"
+                    android:padding="@dimen/fab_margin"
+                    android:text="年借方累计（元）" />
+
+                <TextView
+                    style="@style/tvGrid"
+                    android:layout_height="@dimen/pt36"
+                    android:padding="@dimen/fab_margin"
+                    android:text="上年结转余额（元）" />
+
+                <TextView
+                    style="@style/tvGrid"
+                    android:layout_height="@dimen/pt36"
+                    android:padding="@dimen/fab_margin"
+                    android:text="年贷方累计（元）" />
+
+                <TextView
+                    style="@style/tvGrid"
+                    android:layout_height="@dimen/pt36"
+                    android:padding="@dimen/fab_margin"
+                    android:text="历年借方累计（元）" />
+
+                <TextView
+                    style="@style/tvGrid"
+                    android:layout_height="@dimen/pt36"
+                    android:padding="@dimen/fab_margin"
+                    android:text="历年贷方累计（元）" />
+
+                <TextView
+                    style="@style/tvGrid"
+                    android:layout_height="@dimen/pt36"
+                    android:padding="@dimen/fab_margin"
+                    android:text="账户余额（元）" />
+
+                <TextView
+                    style="@style/tvGrid"
+                    android:layout_height="@dimen/pt36"
+                    android:padding="@dimen/fab_margin"
+                    android:text="缴至年月" />
+
+                <TextView
+                    style="@style/tvGrid"
+                    android:layout_height="@dimen/pt36"
+                    android:padding="@dimen/fab_margin"
+                    android:text="实际收入（元）" />
+
+                <TextView
+                    style="@style/tvGrid"
+                    android:layout_height="@dimen/pt36"
+                    android:padding="@dimen/fab_margin"
+                    android:text="单位缴交率（%）" />
+
+                <TextView
+                    style="@style/tvGrid"
+                    android:layout_height="@dimen/pt36"
+                    android:padding="@dimen/fab_margin"
+                    android:text="个人缴交率（%）" />
+
+                <TextView
+                    style="@style/tvGrid"
+                    android:layout_height="@dimen/pt36"
+                    android:padding="@dimen/fab_margin"
+                    android:text="单位应缴额（元）" />
+                <TextView
+                    style="@style/tvGrid"
+                    android:layout_height="@dimen/pt36"
+                    android:padding="@dimen/fab_margin"
+                    android:text="职工应缴额（元）" />
+
+                <TextView
+                    style="@style/tvGrid"
+                    android:layout_height="@dimen/pt36"
+                    android:padding="@dimen/fab_margin"
+                    android:text="月应缴额（元）" />
+                <TextView
+                    style="@style/tvGrid"
+                    android:layout_height="@dimen/pt36"
+                    android:padding="@dimen/fab_margin"
+                    android:text="冻结标志" />
+                <TextView
+                    style="@style/tvGrid"
+                    android:layout_height="@dimen/pt72"
+                    android:padding="@dimen/fab_margin"
+                    android:text="单位名称" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="@dimen/pt1"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv1"
+                    style="@style/tvGrid"
+                    android:layout_height="@dimen/pt36"
+                    android:padding="@dimen/fab_margin" />
+
+                <TextView
+                    android:id="@+id/tv2"
+                    style="@style/tvGrid"
+                    android:textSize="12sp"
+                    android:layout_height="@dimen/pt36"
+                    android:padding="@dimen/fab_margin" />
+
+                <TextView
+                    android:id="@+id/tv3"
+                    style="@style/tvGrid"
+                    android:layout_height="@dimen/pt36"
+                    android:padding="@dimen/fab_margin" />
+
+                <TextView
+                    android:id="@+id/tv4"
+                    style="@style/tvGrid"
+                    android:layout_height="@dimen/pt36"
+                    android:padding="@dimen/fab_margin" />
+
+                <TextView
+                    android:id="@+id/tv5"
+                    style="@style/tvGrid"
+                    android:layout_height="@dimen/pt36"
+                    android:padding="@dimen/fab_margin" />
+
+                <TextView
+                    android:id="@+id/tv6"
+                    style="@style/tvGrid"
+                    android:layout_height="@dimen/pt36"
+                    android:padding="@dimen/fab_margin" />
+
+                <TextView
+                    android:id="@+id/tv7"
+                    style="@style/tvGrid"
+                    android:layout_height="@dimen/pt36"
+                    android:padding="@dimen/fab_margin" />
+
+                <TextView
+                    android:id="@+id/tv8"
+                    style="@style/tvGrid"
+                    android:layout_height="@dimen/pt36"
+                    android:padding="@dimen/fab_margin" />
+
+                <TextView
+                    android:id="@+id/tv9"
+                    style="@style/tvGrid"
+                    android:layout_height="@dimen/pt36"
+                    android:padding="@dimen/fab_margin" />
+
+                <TextView
+                    android:id="@+id/tv10"
+                    style="@style/tvGrid"
+                    android:layout_height="@dimen/pt36"
+                    android:padding="@dimen/fab_margin" />
+
+                <TextView
+                    android:id="@+id/tv11"
+                    style="@style/tvGrid"
+                    android:layout_height="@dimen/pt36"
+                    android:padding="@dimen/fab_margin" />
+
+                <TextView
+                    android:id="@+id/tv12"
+                    style="@style/tvGrid"
+                    android:layout_height="@dimen/pt36"
+                    android:padding="@dimen/fab_margin" />
+
+                <TextView
+                    android:id="@+id/tv13"
+                    style="@style/tvGrid"
+                    android:layout_height="@dimen/pt36"
+                    android:padding="@dimen/fab_margin" />
+
+                <TextView
+                    android:id="@+id/tv14"
+                    style="@style/tvGrid"
+                    android:layout_height="@dimen/pt36"
+                    android:padding="@dimen/fab_margin"
+                    android:text="" />
+
+                <TextView
+                    android:id="@+id/tv15"
+                    style="@style/tvGrid"
+                    android:layout_height="@dimen/pt36"
+                    android:padding="@dimen/fab_margin"
+                    android:text="" />
+
+                <TextView
+                    android:id="@+id/tv16"
+                    style="@style/tvGrid"
+                    android:layout_height="@dimen/pt36"
+                    android:padding="@dimen/fab_margin"
+                    android:text="" />
+
+                <TextView
+                    android:id="@+id/tv17"
+                    style="@style/tvGrid"
+                    android:layout_height="@dimen/pt36"
+                    android:padding="@dimen/fab_margin"
+                    android:text="" />
+                <TextView
+                    android:id="@+id/tv18"
+                    style="@style/tvGrid"
+                    android:layout_height="@dimen/pt36"
+                    android:padding="@dimen/fab_margin"
+                    android:text="" />
+
+                <TextView
+                    android:id="@+id/tv19"
+                    style="@style/tvGrid"
+                    android:layout_height="@dimen/pt36"
+                    android:padding="@dimen/fab_margin"
+                    android:text="" />
+
+                <TextView
+                    android:id="@+id/tv20"
+                    style="@style/tvGrid"
+                    android:layout_height="@dimen/pt36"
+                    android:padding="@dimen/fab_margin"
+                    android:text="" />
+                <TextView
+                    android:id="@+id/tv21"
+                    style="@style/tvGrid"
+                    android:layout_height="@dimen/pt72"
+                    android:padding="@dimen/fab_margin"
+                    android:text="" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/pt36"
+        android:layout_margin="@dimen/pt4">
+
+        <Button
+            android:id="@+id/btn1"
+            style="@style/style_btn_blue1"
+            android:layout_width="@dimen/pt1"
+            android:layout_height="@dimen/unit_btnheight"
+            android:layout_marginRight="@dimen/pt4"
+            android:layout_weight="1"
+            android:text="普通账户" />
+
+        <Button
+            android:id="@+id/btn2"
+            style="@style/style_btn_blue1"
+            android:layout_width="@dimen/pt1"
+            android:layout_height="@dimen/unit_btnheight"
+            android:layout_marginLeft="@dimen/pt4"
+            android:layout_weight="1"
+            android:text="补贴账户" />
+    </LinearLayout>
+</LinearLayout>
+

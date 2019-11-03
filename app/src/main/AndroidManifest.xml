@@ -1,0 +1,367 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.lecheng.hello.fzgjj">
+
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <!-- 允许程序获取网络状态 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- 允许程序访问WiFi网络信息 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!-- 允许程序读写手机状态和身份 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <!-- 允许程序访问CellID或WiFi热点来获取粗略的位置 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <!-- 允许获取联系人的权限 -->
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <!-- 允许修改联系人的权限 -->
+    <uses-permission android:name="android.permission.WRITE_CONTACTS" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <!-- Push service 运行需要的权限 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!-- 富媒体需要声明的权限 -->
+    <uses-permission android:name="android.permission.ACCESS_DOWNLOAD_MANAGER" />
+    <uses-permission android:name="android.permission.DOWNLOAD_WITHOUT_NOTIFICATION" />
+    <uses-permission android:name="android.permission.EXPAND_STATUS_BAR" />
+
+    <!-- 适配Android N系统必需的ContentProvider写权限声明，写权限包含应用包名 -->
+    <uses-permission android:name="baidu.push.permission.WRITE_PUSHINFOPROVIDER.com.lecheng.hello.fzgjj" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+
+    <permission
+        android:name="baidu.push.permission.WRITE_PUSHINFOPROVIDER.com.lecheng.hello.fzgjj"
+        android:protectionLevel="signature" />
+
+    <!-- 小米 配置开始 < -->
+
+    <permission
+        android:name="com.lecheng.hello.fzgjj.permission.MIPUSH_RECEIVE"
+        android:protectionLevel="signature" />
+    <!--这里com.xiaomi.mipushdemo改成app的包名-->
+    <uses-permission android:name="com.lecheng.hello.fzgjj.permission.MIPUSH_RECEIVE" />
+    <!--这里com.xiaomi.mipushdemo改成app的包名-->
+
+    <application
+        android:name=".Utils.MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <meta-data
+            android:name="android.max_aspect"
+            android:value="2.1" />
+        <!--<uses-sdk xmlns:tools="http://schemas.android.com/tools"-->
+        <!--tools:node="replace" />-->
+
+        <activity
+            android:name=".BlankActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/startTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:launchMode="singleTask"
+            android:name=".Activity.ReUI.HomeActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name=".Activity.ReUI.QueryActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name=".Activity.ReUI.ToolActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name=".Activity.ReUI.HelpCenterActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+
+        <activity
+            android:name=".Activity.Unit.Info"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.H1.MoreInfo"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.Unit.MyBrowser"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.H2.ChangeInformation"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.H4.ProblemsListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.H2.CreditProgressActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.H2.CreditListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.H2.PreHandlerActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.H2.YuYueActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.H2.YuYueActivity2"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".Activity.H2.DepositedQuery"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.H2.QueryPersonTQ"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.H2.PersonalDebitQuery"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.H3.PolicyDocs"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".Activity.H3.GuideInfo"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.H3.BuildingsSearch"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Loaction.RoutePlanDemo"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.H4.PushSetting"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".Activity.H4.AllSearch"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name=".Activity.H4.OnlineCommunicate"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.H4.CommonProblem"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.H4.Puzzle"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.H4.Suggest"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.H4.Home4ja"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.H4.Comments"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.Unit.InfoList"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.H2.PersonalAccountQuery"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.H2.GJJAccountTQQuery"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.H2.PersonalDebitInfo"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.H2.DebitAccountInfo"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.H2.LoanRepaymentInfo"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.H2.TQRepaymentInfo"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.H2.ChangeInformation_Sub"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name=".Activity.H4.Home4b"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.H4.PersonalHome"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.H4.Help"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.H4.ModifyPassword"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.H3.DocDownloads"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.H4.Home4jj"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.H4.SurveyCollect"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.H4.PushMessageActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.H3.WorkPlaceActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.Unit.ChangePassword"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".TbsFileReader.FileDisplayActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.Unit.ConfirmPhoneActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.ReUI.NewsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.ReUI.OpenMessage"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.H2.RepaymentActivity"
+            android:screenOrientation="portrait" />
+
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote">
+            <intent-filter>
+                <action android:name="com.baidu.location.service_v2.2" />
+            </intent-filter>
+        </service>
+
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="apcoGbEgz7D4xG1ooTVcEGNaW5Y35vol" />
+
+        <!-- 在百度开发者中心查询应用的API Key -->
+        <meta-data
+            android:name="api_key"
+            android:value="tCKgzevZVL5FLBcDc8L7OREY" />
+
+        <activity
+            android:name=".Activity.H3.CalculateDepositeActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".Activity.H3.CalculateReturnActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden"></activity>
+        <activity
+            android:name=".Activity.H4.SurveyActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.H4.SurveyDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.H4.PeopleSurveyActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- 小米 配置开始 < -->
+
+        <service
+            android:name="com.xiaomi.push.service.XMPushService"
+            android:enabled="true" />
+        <service
+            android:name="com.xiaomi.mipush.sdk.PushMessageHandler"
+            android:enabled="true"
+            android:exported="true" />
+        <service
+            android:name="com.xiaomi.mipush.sdk.MessageHandleService"
+            android:enabled="true" />
+        <!-- 注：此service必须在2.2.5版本以后（包括2.2.5版本）加入 -->
+
+        <service
+            android:name="com.xiaomi.push.service.XMJobService"
+            android:enabled="true"
+            android:exported="false"
+            android:permission="android.permission.BIND_JOB_SERVICE" />
+        <!-- 注：此service必须在3.0.1版本以后（包括3.0.1版本）加入 -->
+
+        <receiver
+            android:name="com.xiaomi.push.service.receivers.NetworkStatusReceiver"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="com.xiaomi.push.service.receivers.PingReceiver"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.xiaomi.push.PING_TIMER" />
+            </intent-filter>
+        </receiver>
+        <!-- io.rong.push.platform.MiMessageReceiver -->
+        <receiver
+            android:name=".Receiver.MiPushReceiver"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.xiaomi.mipush.RECEIVE_MESSAGE" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.xiaomi.mipush.MESSAGE_ARRIVED" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.xiaomi.mipush.ERROR" />
+            </intent-filter>
+        </receiver>
+
+        <receiver
+            android:name=".Receiver.MiPushReceiver"
+            android:exported="true">
+            <!--这里com.xiaomi.mipushdemo.DemoMessageRreceiver改成app中定义的完整类名-->
+            <intent-filter>
+                <action android:name="com.xiaomi.mipush.RECEIVE_MESSAGE" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.xiaomi.mipush.MESSAGE_ARRIVED" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.xiaomi.mipush.ERROR" />
+            </intent-filter>
+        </receiver>
+        <!--小米 配置结束-->
+    </application>
+
+</manifest>

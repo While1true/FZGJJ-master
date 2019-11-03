@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ll"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="1"
+    android:background="@color/lxl_bg"
+    android:orientation="vertical"
+    tools:context=".Activity.H1.NewsFragment">
+
+    <fragment
+        android:id="@+id/frag"
+        android:name="com.lecheng.hello.fzgjj.Activity.Unit.ActionBar"
+        class="com.lecheng.hello.fzgjj.Activity.Unit.ActionBar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/pt48"
+        tools:layout="@layout/unit_actionbar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:padding="@dimen/fab_margin">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="用户须知"
+            android:textColor="@color/colorBlack"
+            android:textSize="20sp" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/pt4"
+            android:layout_marginRight="@dimen/pt4"
+            android:layout_marginTop="@dimen/pt12">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:lineSpacingExtra="@dimen/pt6"
+                android:text="       福建省直单位住房公积金管理中心公积金个人用户在进行个人资料变更前，先阅读个人资料变更的相关协议，协议中需明确互联网个人资料变更的适用范围、公积金个人用户和福建省直单位住房公积金管理中心在个人资料变更活动中需要履行的承诺及承担的责任。公积金个人用户在阅读协议后，确认是否同意个人资料变更的相关协议，只有同意的才可进行下一步个人资料变更。系统后台需要提供给工作人员相关的个人资料变更协议信息的管理功能。" />
+        </ScrollView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/pt4"
+        android:orientation="vertical">
+
+        <CheckBox
+            android:id="@+id/cb1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/fab_margin"
+            android:layout_marginLeft="@dimen/pt4"
+            android:text="我已经认真阅读并同意遵守上述须知内容" />
+
+        <Button
+            android:id="@+id/btn1"
+            style="@style/style_btn_blue1"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/unit_btnheight"
+            android:layout_marginLeft="@dimen/pt4"
+            android:layout_weight="1"
+            android:text="资料修改" />
+    </LinearLayout>
+</LinearLayout>
+

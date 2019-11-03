@@ -1,0 +1,115 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="bottom|center">
+
+    <!--<ScrollView-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content">-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bitmap_bg1"
+        android:elevation="4dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/fab_margin"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="福建省直住房"
+                android:textColor="@color/colorBlue1"
+                android:textSize="28dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="公积金"
+                android:textSize="28dp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="个人用户登录"
+            android:textSize="13dp" />
+
+        <EditText
+            android:id="@+id/etAccount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/fab_margin"
+            android:editable="true"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:hint="请输入身份证号"
+            android:imeOptions="actionNext"
+            android:inputType="number"
+            android:maxLength="30"
+            android:paddingLeft="@dimen/fab_margin"
+            android:singleLine="true"
+            android:text=""
+            android:textColor="#535353" />
+
+        <EditText
+            android:id="@+id/etPwd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="#535353"
+            android:inputType="number"
+            android:editable="true"
+            android:maxLength="20"
+            android:focusableInTouchMode="true"
+            android:layout_margin="@dimen/fab_margin"
+            android:hint="请输入密码"
+            android:imeOptions="actionDone"
+            android:paddingLeft="@dimen/fab_margin"
+            android:password="true"
+            android:singleLine="true" />
+
+
+        <!--android:clickable="true"-->
+
+            <Button
+                android:id="@+id/btnLogin"
+                style="@style/style_btn_blue1"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/unit_btnheight"
+                android:text="登录" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/cbRemember"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="记住账号密码" />
+
+            <TextView
+                android:id="@+id/tvRegister"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="50dp"
+                android:gravity="right|center_vertical"
+                android:text="忘记密码？"
+                android:textColor="@color/colorBlue2" />
+        </LinearLayout>
+    </LinearLayout>
+    <!--</ScrollView>-->
+</LinearLayout>

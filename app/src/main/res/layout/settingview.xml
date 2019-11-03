@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.lecheng.hello.fzgjj.Widget.SettingView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/settingview"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:titleDrawable="@drawable/changeaccount"
+    app:drawableSize="@dimen/pt25"
+    app:drawablePadding="@dimen/fab_margin"
+    android:background="@drawable/style_bg_white"
+    android:padding="@dimen/unit_textsize"
+    android:textSize="20dp"
+    app:titletext="个人资料管理" />

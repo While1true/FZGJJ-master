@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ll"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lxl_bg"
+    android:orientation="vertical"
+    tools:context=".Activity.H1.NewsFragment">
+
+    <fragment
+        android:id="@+id/frag"
+        android:name="com.lecheng.hello.fzgjj.Activity.Unit.ActionBar"
+        class="com.lecheng.hello.fzgjj.Activity.Unit.ActionBar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/pt48"
+        tools:layout="@layout/unit_actionbar" />
+    <com.ck.hello.nestrefreshlib.View.Adpater.SLoading
+        android:id="@+id/sloading"
+        android:layout_width="match_parent"
+        app:sradius="12dp"
+        app:snum="4"
+        app:sgap="8dp"
+        android:layout_height="match_parent" />
+
+    <TextView
+        android:id="@+id/tvDW"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/pt4"
+        android:text="说明：单位（元）"
+        android:textSize="14dp" />
+
+    <View style="@style/style_v_line2" />
+
+    <LinearLayout
+        android:id="@+id/ll1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/pt4"
+        android:gravity="center_vertical"
+        android:background="@drawable/shape_blue"
+        android:orientation="horizontal"
+        android:padding="@dimen/pt4">
+
+        <TextView
+            android:id="@+id/tv1"
+            android:layout_width="@dimen/pt1"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="@dimen/pt4"
+            android:gravity="center"
+            android:text="提取编号"
+            android:textColor="@color/colorWhite" />
+        <TextView
+            android:id="@+id/tv2"
+            android:layout_width="@dimen/pt1"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="@dimen/pt4"
+            android:gravity="center"
+            android:text="提取金额"
+            android:textColor="@color/colorWhite" />
+
+        <TextView
+            android:id="@+id/tv3"
+            android:layout_width="@dimen/pt1"
+            android:layout_margin="@dimen/pt4"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="提取时间"
+            android:textColor="@color/colorWhite" />
+
+        <TextView
+            android:id="@+id/tv4"
+            android:layout_width="@dimen/pt1"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_margin="@dimen/pt4"
+            android:text="提取方式"
+            android:textColor="@color/colorWhite" />
+
+        <TextView
+            android:id="@+id/tv5"
+            android:layout_width="@dimen/pt1"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_margin="@dimen/pt4"
+            android:text="提取原因"
+            android:textColor="@color/colorWhite" />
+    </LinearLayout>
+
+    <View style="@style/style_v_line2" />
+
+    <coms.kxjsj.refreshlayout_master.RefreshLayout
+        android:id="@+id/lv1"
+        app:elastic_overscroll="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/pt4">
+
+        <Button
+            android:id="@+id/btn1"
+            style="@style/style_btn_blue1"
+            android:layout_width="@dimen/pt1"
+            android:layout_height="@dimen/unit_btnheight"
+            android:layout_marginRight="@dimen/pt4"
+            android:layout_weight="1"
+            android:text="普通账户" />
+
+        <Button
+            android:id="@+id/btn2"
+            style="@style/style_btn_blue1"
+            android:layout_width="@dimen/pt1"
+            android:layout_height="@dimen/unit_btnheight"
+            android:layout_marginLeft="@dimen/pt4"
+            android:layout_weight="1"
+            android:text="补贴账户" />
+    </LinearLayout>
+</LinearLayout>
+

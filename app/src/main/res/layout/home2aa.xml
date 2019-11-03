@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="1"
+    android:background="@color/lxl_bg"
+    android:orientation="vertical"
+    tools:context="com.lecheng.hello.fzgjj.Activity.H2.ChangeInformation_Sub">
+
+    <fragment
+        android:id="@+id/frag"
+        android:name="com.lecheng.hello.fzgjj.Activity.Unit.ActionBar"
+        class="com.lecheng.hello.fzgjj.Activity.Unit.ActionBar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/pt48"
+        tools:layout="@layout/unit_actionbar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:id="@+id/ll1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/fab_margin"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/fab_margin"
+                android:text="公积金账号:" />
+
+            <EditText
+                android:id="@+id/et1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/pt2"
+                android:background="@drawable/style_et_shape"
+                android:enabled="false"
+                android:hint="公积金账号" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/fab_margin"
+                android:enabled="false"
+                android:text="姓名:" />
+
+            <EditText
+                android:id="@+id/et2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/pt2"
+                android:background="@drawable/style_et_shape"
+                android:enabled="false"
+                android:hint="请输入修改的姓名" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/fab_margin"
+                android:text="证件类型:" />
+
+            <EditText
+                android:id="@+id/et3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/pt2"
+                android:background="@drawable/style_et_shape"
+                android:enabled="false"
+                android:hint="请输入修改的证件类型" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/fab_margin"
+                android:text="证件号码:" />
+
+            <EditText
+                android:id="@+id/et4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/pt2"
+                android:background="@drawable/style_et_shape"
+                android:enabled="false"
+                android:hint="请输入修改的证件号码"
+                android:maxEms="20" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/fab_margin"
+                android:text="手机号码:" />
+
+            <EditText
+                android:id="@+id/et5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/pt2"
+                android:background="@drawable/style_et_shape"
+                android:enabled="false"
+                android:hint="请输入修改的手机号"
+                android:inputType="number"
+                android:maxEms="20" />
+
+            <LinearLayout
+                android:id="@+id/llOther"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/fab_margin"
+                    android:text="电子邮箱:" />
+
+                <EditText
+                    android:id="@+id/etEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/pt2"
+                    android:background="@drawable/style_et_shape"
+                    android:hint="请输入电子邮箱"
+                    android:inputType="textWebEmailAddress"
+                    android:maxEms="20" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/fab_margin"
+                    android:text="家庭住址:" />
+
+                <EditText
+                    android:id="@+id/etAddress"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/pt2"
+                    android:background="@drawable/style_et_shape"
+                    android:hint="请输入家庭住址"
+                    android:maxEms="20" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/fab_margin"
+                    android:text="家庭电话:" />
+
+                <EditText
+                    android:id="@+id/tel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/pt2"
+                    android:background="@drawable/style_et_shape"
+                    android:hint="家庭电话"
+                    android:inputType="phone"
+                    android:maxEms="20" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/fab_margin"
+                    android:text="工作单位:" />
+
+                <EditText
+                    android:id="@+id/workplace"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/pt2"
+                    android:background="@drawable/style_et_shape"
+                    android:hint="工作单位"
+                    android:maxEms="20" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/fab_margin"
+                    android:text="工作单位电话:" />
+
+                <EditText
+                    android:id="@+id/worktel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/pt2"
+                    android:background="@drawable/style_et_shape"
+                    android:hint="工作单位电话"
+                    android:inputType="phone"
+                    android:maxEms="20" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llCode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/fab_margin"
+                    android:text="手机验证码:" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:paddingBottom="@dimen/pt12">
+
+                    <EditText
+                        android:id="@+id/et6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/pt2"
+                        android:layout_weight="1"
+                        android:background="@drawable/style_et_shape"
+                        android:enabled="false"
+                        android:hint="请输入验证码"
+                        android:inputType="number" />
+
+                    <Button
+                        android:id="@+id/btnSend"
+                        style="@style/style_btn_blue1"
+                        android:layout_width="@dimen/pt108"
+                        android:layout_height="@dimen/pt36"
+                        android:layout_marginLeft="@dimen/fab_margin"
+                        android:enabled="false"
+                        android:text="发送验证码"
+                        android:textColor="@color/colorTextGray2" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp">
+
+
+        <Button
+            android:id="@+id/btn1"
+            style="@style/style_btn_blue1"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/unit_btnheight"
+            android:layout_marginLeft="@dimen/pt4"
+            android:layout_weight="1"
+            android:text="确认信息" />
+
+        <!--<Button-->
+            <!--android:id="@+id/btn2"-->
+            <!--style="@style/style_btn_blue1"-->
+            <!--android:layout_width="1dp"-->
+            <!--android:layout_height="@dimen/unit_btnheight"-->
+            <!--android:layout_marginLeft="4dp"-->
+            <!--android:layout_weight="1"-->
+            <!--android:enabled="false"-->
+            <!--android:text="确认提交"-->
+            <!--android:textColor="@color/colorTextGray2" />-->
+    </LinearLayout>
+</LinearLayout>

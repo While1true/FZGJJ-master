@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ll"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="1"
+    android:background="@color/lxl_bg"
+    android:orientation="vertical">
+
+    <fragment
+        android:id="@+id/frag"
+        android:name="com.lecheng.hello.fzgjj.Activity.Unit.ActionBar"
+        class="com.lecheng.hello.fzgjj.Activity.Unit.ActionBar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/pt48"
+        tools:layout="@layout/unit_actionbar" />
+
+    <coms.kxjsj.refreshlayout_master.RefreshLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:elastic_overscroll="true">
+
+        <android.support.v4.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/fab_margin">
+
+                <com.lecheng.hello.fzgjj.Widget.SettingView
+                    android:id="@+id/tv1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/style_bg_white"
+                    android:padding="@dimen/unit_textsize"
+                    android:textSize="20dp"
+                    app:drawableSize="@dimen/pt25"
+                    app:subtitleText="个人信息查看、修改"
+                    app:titleDrawable="@drawable/changeaccount"
+                    app:titletext="个人资料管理" />
+
+                <View style="@style/style_v_line1" />
+
+                <com.lecheng.hello.fzgjj.Widget.SettingView
+                    android:id="@+id/tv2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/style_bg_white"
+                    android:padding="@dimen/unit_textsize"
+                    android:textSize="20dp"
+                    app:drawableSize="@dimen/pt25"
+                    app:titleDrawable="@drawable/changepass"
+                    app:titletext="修改用户密码" />
+
+                <View style="@style/style_v_line1" />
+
+                <com.lecheng.hello.fzgjj.Widget.SettingView
+                    android:id="@+id/tv3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/style_bg_white"
+                    android:padding="@dimen/unit_textsize"
+                    android:textSize="20dp"
+                    app:drawableSize="@dimen/pt25"
+                    app:titleDrawable="@drawable/loginout"
+                    app:titletext="切换/注销账户" />
+
+                <View style="@style/style_v_line1" />
+
+                <com.lecheng.hello.fzgjj.Widget.SettingView
+                    android:id="@+id/tv4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/style_bg_white"
+                    android:padding="@dimen/unit_textsize"
+                    android:textSize="20dp"
+                    app:drawableSize="@dimen/pt25"
+                    app:subtitleText="可设置不需要推送提醒"
+                    app:titleDrawable="@drawable/push"
+                    app:titletext="消息推送设置" />
+                <!--app:titleDrawable="@drawable/ic_d8"-->
+                <View style="@style/style_v_line1" />
+
+                <com.lecheng.hello.fzgjj.Widget.SettingView
+                    android:id="@+id/tv5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/style_bg_white"
+                    android:padding="@dimen/unit_textsize"
+                    android:textSize="20dp"
+                    app:drawableSize="@dimen/pt25"
+                    app:titleDrawable="@drawable/update"
+                    app:titletext="检查更新" />
+
+                <View style="@style/style_v_line1" />
+
+                <com.lecheng.hello.fzgjj.Widget.SettingView
+                    android:id="@+id/tv6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/style_bg_white"
+                    android:padding="@dimen/unit_textsize"
+                    android:textSize="20dp"
+                    app:drawableSize="@dimen/pt23"
+                    app:titleDrawable="@drawable/repay"
+                    app:titletext="在线还款" />
+
+                <View style="@style/style_v_line1" />
+
+                <com.lecheng.hello.fzgjj.Widget.SettingView
+                    android:id="@+id/tv7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/style_bg_white"
+                    android:padding="@dimen/unit_textsize"
+                    android:textSize="20dp"
+                    app:drawableSize="@dimen/pt23"
+                    app:titleDrawable="@drawable/openmessage"
+                    app:titletext="开通短信" />
+                <!--app:titleDrawable="@drawable/ic_update"-->
+            </LinearLayout>
+        </android.support.v4.widget.NestedScrollView>
+    </coms.kxjsj.refreshlayout_master.RefreshLayout>
+
+</LinearLayout>

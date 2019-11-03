@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/llFrag"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="1"
+    android:gravity="center"
+    tools:context=".Activity.H1.NewsFragment">
+
+    <FrameLayout
+        android:layout_width="@dimen/pt240"
+        android:layout_height="@dimen/pt120"
+        android:background="@color/BlackCool"
+        android:paddingLeft="@dimen/pt16"
+        android:paddingRight="@dimen/pt16"
+        android:paddingTop="@dimen/fab_margin">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="还款进度查询"
+            android:textColor="@color/colorWhite" />
+
+        <TextView
+            android:id="@+id/tvMsg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="载入中..."
+            android:textColor="@color/colorWhite"
+            android:textSize="18dp" />
+    </FrameLayout>
+
+
+</LinearLayout>
+

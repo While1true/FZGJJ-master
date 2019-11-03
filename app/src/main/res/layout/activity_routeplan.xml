@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:id="@+id/ll"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/pt48"
+        android:background="@color/title"
+        android:elevation="@dimen/pt2"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+
+   >
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="@dimen/pt36"
+            android:layout_height="@dimen/pt36"
+            android:layout_margin="@dimen/pt6"
+            android:background="@drawable/ic_back" />
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/pt48"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="公交路线查询"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/unit_screensize" />
+
+        <ImageView
+            android:id="@+id/iv_menu"
+            android:visibility="invisible"
+            android:layout_width="@dimen/pt36"
+            android:layout_height="@dimen/pt36"
+            android:layout_margin="@dimen/pt6"
+            android:background="@drawable/ic_menu" />
+    </LinearLayout>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.baidu.mapapi.map.MapView
+            android:id="@+id/map"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_above="@+id/tt"
+            android:clickable="true" />
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignWithParentIfMissing="false"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dip"
+            android:orientation="vertical">
+
+        </LinearLayout>
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:id="@+id/tt"
+            android:orientation="vertical"
+            android:layout_alignWithParentIfMissing="false"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="false"
+            android:layout_marginBottom="10dip">
+
+            <TextView
+                android:id="@+id/rountlines"
+                android:padding="15dp"
+                android:paddingBottom="0dp"
+                android:textSize="16sp"
+                android:textColor="#535353"
+                android:visibility="gone"
+                android:lineSpacingExtra="@dimen/pt4"
+                android:background="@drawable/grey_round_shape"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                 />
+
+            <Button
+                android:id="@+id/pre"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="2dip"
+                android:layout_marginRight="2dip"
+                android:layout_weight="1.0"
+                android:background="@drawable/grey_round_shape"
+                android:onClick="nodeClick"
+                android:text="查看路线" />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

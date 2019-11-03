@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ll"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="1"
+    android:background="@color/lxl_bg"
+    android:orientation="vertical"
+    tools:context=".Activity.H1.NewsFragment">
+
+    <fragment
+        android:id="@+id/frag"
+        android:name="com.lecheng.hello.fzgjj.Activity.Unit.ActionBar"
+        class="com.lecheng.hello.fzgjj.Activity.Unit.ActionBar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/pt48"
+        tools:layout="@layout/unit_actionbar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/colorTextGray2"
+            android:paddingBottom="@dimen/pt16">
+
+            <LinearLayout
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView2"
+                    style="@style/tvGrid"
+                    android:layout_height="@dimen/pt36"
+                    android:text="个人姓名" />
+
+                <TextView
+                    style="@style/tvGrid"
+                    android:layout_height="@dimen/pt72"
+                    android:gravity="center"
+                    android:padding="@dimen/fab_margin"
+                    android:text="身份证号码" />
+
+                <TextView
+                    style="@style/tvGrid"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/pt36"
+                    android:gravity="center"
+                    android:padding="@dimen/fab_margin"
+                    android:text="性别" />
+
+                <TextView
+                    style="@style/tvGrid"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/pt36"
+                    android:gravity="center"
+                    android:padding="@dimen/fab_margin"
+                    android:text="出生年月" />
+
+                <TextView
+                    style="@style/tvGrid"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/pt72"
+                    android:gravity="center"
+                    android:padding="@dimen/fab_margin"
+                    android:text="个人单位名称" />
+
+                <TextView
+                    style="@style/tvGrid"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/pt36"
+                    android:gravity="center"
+                    android:padding="@dimen/fab_margin"
+                    android:text="单位地址" />
+
+                <TextView
+                    style="@style/tvGrid"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/pt36"
+                    android:gravity="center"
+                    android:padding="@dimen/fab_margin"
+                    android:text="婚姻状况" />
+
+                <TextView
+                    style="@style/tvGrid"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/pt36"
+                    android:gravity="center"
+                    android:padding="@dimen/fab_margin"
+                    android:text="人员身份" />
+
+                <TextView
+                    style="@style/tvGrid"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/pt36"
+                    android:gravity="center"
+                    android:padding="@dimen/fab_margin"
+                    android:text="余额" />
+
+                <TextView
+                    style="@style/tvGrid"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/pt36"
+                    android:gravity="center"
+                    android:padding="@dimen/fab_margin"
+                    android:text="联名卡号" />
+
+                <TextView
+                    style="@style/tvGrid"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/pt36"
+                    android:gravity="center"
+                    android:padding="@dimen/fab_margin"
+                    android:text="联名卡开户行" />
+
+                <TextView
+                    style="@style/tvGrid"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/pt36"
+                    android:gravity="center"
+                    android:padding="@dimen/fab_margin"
+                    android:text="家庭住址" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv1"
+                    style="@style/tvGrid"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/pt36"
+                    android:gravity="center"
+                    android:padding="@dimen/fab_margin"
+                    android:text="..." />
+
+                <TextView
+                    android:id="@+id/tv2"
+                    style="@style/tvGrid"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/pt72"
+                    android:gravity="center"
+                    android:padding="@dimen/fab_margin"
+                    android:text="..." />
+
+                <TextView
+                    android:id="@+id/tv3"
+                    style="@style/tvGrid"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/pt36"
+                    android:gravity="center"
+                    android:padding="@dimen/fab_margin"
+                    android:text="..." />
+
+                <TextView
+                    android:id="@+id/tv4"
+                    style="@style/tvGrid"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/pt36"
+                    android:gravity="center"
+                    android:padding="@dimen/fab_margin"
+                    android:text="..." />
+
+                <TextView
+                    android:id="@+id/tv5"
+                    style="@style/tvGrid"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/pt72"
+                    android:gravity="center"
+                    android:padding="@dimen/fab_margin"
+                    android:text="..." />
+
+                <TextView
+                    android:id="@+id/tv6"
+                    style="@style/tvGrid"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/pt36"
+                    android:gravity="center"
+                    android:padding="@dimen/fab_margin"
+                    android:text="..." />
+
+                <TextView
+                    android:id="@+id/tv7"
+                    style="@style/tvGrid"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/pt36"
+                    android:gravity="center"
+                    android:padding="@dimen/fab_margin"
+                    android:text="..." />
+
+                <TextView
+                    android:id="@+id/tv8"
+                    style="@style/tvGrid"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/pt36"
+                    android:gravity="center"
+                    android:padding="@dimen/fab_margin"
+                    android:text="..." />
+
+                <TextView
+                    android:id="@+id/tv9"
+                    style="@style/tvGrid"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/pt36"
+                    android:gravity="center"
+                    android:padding="@dimen/fab_margin"
+                    android:text="..." />
+
+                <TextView
+                    android:id="@+id/tv10"
+                    style="@style/tvGrid"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/pt36"
+                    android:gravity="center"
+                    android:padding="@dimen/fab_margin"
+                    android:text="..." />
+
+                <TextView
+                    android:id="@+id/tv11"
+                    style="@style/tvGrid"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/pt36"
+                    android:gravity="center"
+                    android:padding="@dimen/fab_margin"
+                    android:text="..." />
+
+                <TextView
+                    android:id="@+id/tv12"
+                    style="@style/tvGrid"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/pt36"
+                    android:gravity="center"
+                    android:padding="@dimen/fab_margin"
+                    android:text="..." />
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btnBack"
+            style="@style/style_btn_blue1"
+            android:layout_width="@dimen/pt16"
+            android:layout_height="@dimen/pt36"
+            android:layout_margin="@dimen/pt4"
+            android:layout_weight="1"
+            android:text="上一步" />
+
+        <Button
+            android:id="@+id/btnNext"
+            style="@style/style_btn_blue1"
+            android:layout_width="@dimen/pt16"
+            android:layout_height="@dimen/pt36"
+            android:layout_margin="@dimen/pt4"
+            android:layout_weight="1"
+            android:enabled="false"
+            android:text="下一步" />
+    </LinearLayout>
+</LinearLayout>
+
